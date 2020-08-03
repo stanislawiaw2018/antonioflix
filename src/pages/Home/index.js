@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import Menu from './components/Menu';
-import './index.css';
-import BannerMain from './components/BannerMain';
-import dadosIniciais from './data/dados_iniciais.json'
-import Footer from './components/Footer';
-import Carousel from './components/Carousel';
+import Menu from '../../components/Menu';
+// import '../../index.css';
+import BannerMain from '../../components/BannerMain';
+import dadosIniciais from '../../data/dados_iniciais.json'
+import Footer from '../../components/Footer';
+import Carousel from '../../components/Carousel';
 
 const AppWrapper = styled.div`
   padding-top: 94px;
-
+  background: var(--grayDark);
 
   @media (max-width: 800px){
     padding-top: 40px;
@@ -18,7 +18,7 @@ const AppWrapper = styled.div`
 
 `;
 //JSX -> (J)ava(S)cript (X)ML
-function App() {
+function Home() {
   return (
     <AppWrapper>
       
@@ -64,4 +64,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
